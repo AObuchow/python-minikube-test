@@ -23,17 +23,16 @@ components:
     container:
       image: quay.io/devfile/universal-developer-image:ubi8-latest
       mountSources: true
-
-#      endpoints:
-#        - name: https-python
-#          targetPort: 8080
-#          protocol: http
-#          secure: true
-#          attributes:
-#            discoverable: true
-#        - exposure: none
-#          name: debug
-#          targetPort: 5858
+      endpoints:
+        - name: https-python
+          targetPort: 8080
+          protocol: http
+          secure: true
+          attributes:
+            discoverable: true
+        - exposure: none
+          name: debug
+          targetPort: 5858
       env:
         - name: DEBUG_PORT
           value: '5858'
