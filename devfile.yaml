@@ -21,9 +21,10 @@ projects:
 components:
   - name: py
     container:
-      image: registry.access.redhat.com/ubi9/python-39:1-192
+      image: quay.io/devfile/universal-developer-image:ubi8-latest
       args: ['tail', '-f', '/dev/null']
       mountSources: true
+
 #      endpoints:
 #        - name: https-python
 #          targetPort: 8080
