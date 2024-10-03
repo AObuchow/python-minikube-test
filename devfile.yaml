@@ -22,6 +22,10 @@ components:
   - name: tools
     container:
       image: quay.io/devfile/universal-developer-image:ubi8-latest
+      args:
+        - tail
+        - '-f'
+        - /dev/null
       mountSources: true
       endpoints:
         - name: https-python
