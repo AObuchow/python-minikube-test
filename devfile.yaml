@@ -28,8 +28,8 @@ components:
           targetPort: 8080
           protocol: http
           secure: true
-#          attributes:
-#            discoverable: true
+          attributes:
+            discoverable: true
         - exposure: none
           name: debug
           targetPort: 5858
